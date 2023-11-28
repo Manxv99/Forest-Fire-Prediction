@@ -3,7 +3,8 @@ import pickle
 import numpy as np
 import pandas as pd
 
-app = Flask(__name__)  #same as app = express()
+application = Flask(__name__)  #same as app = express()
+app=application
 
 #import ridge regressor model and standard scaler model
 standard_scaler = pickle.load(open('models/scaler2.pkl', 'rb'))
